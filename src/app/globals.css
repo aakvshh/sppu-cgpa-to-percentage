@@ -1,14 +1,24 @@
 * {
+  font-family:'Courier New', Courier, monospace;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+ 
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border: 4px solid;
+  border-radius: 30px;
+  margin: 30px;
+  background-image: linear-gradient(to bottom right, rgb(6, 12, 18), #1b263bff);
 }
+
+
 
 a {
   color: inherit;
@@ -20,3 +30,4 @@ a {
     color-scheme: dark;
   }
 }
+

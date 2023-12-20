@@ -1,0 +1,14 @@
+.header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.header1:hover{
+    color: rgb(56, 114, 189);
+}
+
+.header2:hover{
+    color: rgb(56, 114, 189);
+}

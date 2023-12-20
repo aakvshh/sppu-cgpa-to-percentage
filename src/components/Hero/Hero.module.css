@@ -1,3 +1,94 @@
-.heroSection{
-    
+.heroOne{
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-style: italic;
+    font-size: larger;
 }
+
+.heroTwo1{
+    text-align: left;
+    margin-left: 100px;
+    padding-top: 30px;
+
+}
+
+.heroTwo1 input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #1B4242;
+    font-weight: bolder;
+    font-size: large;
+    border: 2px solid #1B4242;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.877);
+    margin-right: 20px;
+}
+
+.heroTwo2 button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 197px;
+    padding: 10px;
+    border: 2px solid #1B4242;
+    border-radius: 4px;
+    background-color: white; 
+    color: #0d1b2aff;
+    font-weight: bolder;
+    width: 230px;
+}
+
+.heroTwo2 button:hover{
+    background-color: rgb(56, 114, 189);
+}
+
+
+.heroTwo1 label{
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.heroThree{
+    margin-left: 100px;
+    text-align: left;
+}
+
+
+.formulas{
+    margin-right: 100px;
+    text-align: right;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-top: -190px;
+
+}
+
+.table{
+    text-align: center;
+    width: auto;
+    /* margin-right: 0px; */
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 880px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.table table{
+    border-collapse: collapse;
+    border: 2px solid;
+
+}
+
+.table th{
+    border: 2px solid;
+    padding: 10px;
+}
+
+.table td{
+    border: 2px solid;
+    padding: 10px;
+}
+

@@ -48,21 +48,87 @@ const Hero = () => {
 
   return (
     <>
-        <div className={styles.heroSection}>
-            <h1>Welcome bla bla bla</h1>
+        <div className={styles.heroOne}>
+            <h1>SPPU CGPA TO PERCENTAGE CONVERTER</h1>
         </div>
-        <div>
-            <label htmlFor="cgpa">Enter your CGPA</label>
+
+        <div className={styles.heroTwo1}>
+            <label htmlFor="cgpa">Enter your CGPA: </label>
             <input type="text" onChange={(e) => setUserGpa(e.target.value)} />
+           <div className={styles.heroTwo2}>
             <button type='submit' onClick={handleCalculations}>Submit</button>
-        </div><br />
-        <div>
+            </div> 
+        </div>
+        <br />
+        <div className={styles.heroThree}>
         {result !== null ? (
-          <p>Your percentage is: {result}</p>
+          <h3>Your percentage is: {result}</h3>
         ) : (
-          <p>Please enter a valid CGPA.</p>
+          <h3>Please enter a valid CGPA.</h3>
         )}
         </div>
+
+
+        <div className={styles.formulas}>
+          <h2>~ CONVERSION FORMULAS ~</h2> 
+
+        </div>
+
+
+
+         <div className={styles.table}>
+            <table>
+
+             <tr>
+              <th>CGPA range</th>
+              <th>Formula</th>
+              <th>Grade</th>
+             </tr>
+
+             <tr>
+              <td>4.00 to 4.75</td>
+              <td>CGPA * 6.6 + 13.5</td>
+              <td>D</td>
+             </tr>
+
+             <tr>
+              <td>4.75 to 5.75</td>
+              <td>CGPA * 10  - 2.5</td>
+              <td>C</td>
+             </tr>
+
+            <tr>
+              <td>5.75 to 6.75</td>
+              <td>CGPA * 5 + 26.25</td>
+              <td>B</td>
+            </tr>
+
+
+            <tr>
+              <td>6.75 to 8.25</td>
+              <td>CGPA * 10 - 7.5</td>
+              <td>A</td>
+            </tr>
+
+            <tr>
+              <td>8.25 to 9.50</td>
+              <td>CGPA * 12 + 25</td>
+              <td>A+</td>
+            </tr>
+             
+
+            <tr>
+              <td>9.5 to 10.0</td>
+              <td>CGPA * 20 - 100</td>
+              <td>A++</td>
+            </tr>
+              
+
+            </table>
+          </div>
+
+        
+       
 
 
     </>
