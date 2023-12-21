@@ -1,4 +1,53 @@
-.header{
+.section{
+    background-color: var(--bg-color);
+    padding: 18px 0;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    
+
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em 0 2em;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    font-family: 'Sacramento', cursive;
+    font-size: var(--largest-font-size);
+    letter-spacing: 0.8px;
+}
+.logo{
+    border-radius: 50%;
+}
+.links{
+    display: flex;
+    gap: 1em;
+}
+.link{
+    cursor: pointer;
+}
+.link:hover{
+    color: #333;
+}
+
+@media (max-width: 540px){
+    .links{
+        display: none;
+    }
+    .wrapper{
+        justify-content: center;
+    }
+}
+
+
+
+/* .header{
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -11,4 +60,4 @@
 
 .header2:hover{
     color: rgb(56, 114, 189);
-}
+} */

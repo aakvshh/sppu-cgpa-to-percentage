@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Hero.module.css'
 import { useState, useEffect} from 'react'
+import Image from 'next/image'
+import Animation from '../../assets/animation.gif'
 
 const Hero = () => {
   const [usergpa, setUserGpa] = useState('');
@@ -31,7 +33,7 @@ const Hero = () => {
       number >= 4.75 && number < 5.75 ? number = number * 10 - 2.5 :
       number >= 5.75 && number < 6.75 ? number = number * 5 + 26.25 :
       number >= 6.75 && number < 8.25 ? number = number * 10 - 7.5 :
-      number >= 8.25 && number < 9.50 ? number = number * 12 + 25 :
+      number >= 8.25 && number < 9.50 ? number = number * 12 - 25 :
       number >= 9.5 && number < 10.0 ? number = number * 20 - 100 :
       null
 
@@ -48,89 +50,27 @@ const Hero = () => {
 
   return (
     <>
-        <div className={styles.heroOne}>
-            <h1>SPPU CGPA TO PERCENTAGE CONVERTER</h1>
-        </div>
+      <section className={styles.section}>
+        <div className={styles.wrapper}>
+            <div className={styles.heroLeft}>
+                <h1>Effortlessly Bridge CGPA to Percentage with Our Streamlined Tool!</h1><br />
+                <label htmlFor="cgpa"><b>Enter your CGPA: </b></label>
+                <input type="text" onChange={(e) => setUserGpa(e.target.value)} /><br /><br />
+                <button type='submit' onClick={handleCalculations}>Submit</button><br />
+                <div className={styles.result}>
+                  {result !== null ? (
+                    <h3>Your percentage is: {result}{`%`}</h3>
+                  ) : (
+                    <h3>Please enter a valid CGPA.</h3>
+                  )}
+                </div>
+            </div>
 
-        <div className={styles.heroTwo1}>
-            <label htmlFor="cgpa">Enter your CGPA: </label>
-            <input type="text" onChange={(e) => setUserGpa(e.target.value)} />
-           <div className={styles.heroTwo2}>
-            <button type='submit' onClick={handleCalculations}>Submit</button>
-            </div> 
-        </div>
-        <br />
-        <div className={styles.heroThree}>
-        {result !== null ? (
-          <h3>Your percentage is: {result}</h3>
-        ) : (
-          <h3>Please enter a valid CGPA.</h3>
-        )}
-        </div>
-
-
-        <div className={styles.formulas}>
-          <h2>~ CONVERSION FORMULAS ~</h2> 
-
-        </div>
-
-
-
-         <div className={styles.table}>
-            <table>
-
-             <tr>
-              <th>CGPA range</th>
-              <th>Formula</th>
-              <th>Grade</th>
-             </tr>
-
-             <tr>
-              <td>4.00 to 4.75</td>
-              <td>CGPA * 6.6 + 13.5</td>
-              <td>D</td>
-             </tr>
-
-             <tr>
-              <td>4.75 to 5.75</td>
-              <td>CGPA * 10  - 2.5</td>
-              <td>C</td>
-             </tr>
-
-            <tr>
-              <td>5.75 to 6.75</td>
-              <td>CGPA * 5 + 26.25</td>
-              <td>B</td>
-            </tr>
-
-
-            <tr>
-              <td>6.75 to 8.25</td>
-              <td>CGPA * 10 - 7.5</td>
-              <td>A</td>
-            </tr>
-
-            <tr>
-              <td>8.25 to 9.50</td>
-              <td>CGPA * 12 + 25</td>
-              <td>A+</td>
-            </tr>
-             
-
-            <tr>
-              <td>9.5 to 10.0</td>
-              <td>CGPA * 20 - 100</td>
-              <td>A++</td>
-            </tr>
-              
-
-            </table>
+          <div className={styles.heroRight}>
+            <Image className={styles.animation} src={Animation} width={400} height={300} /> 
           </div>
-
-        
-       
-
-
+        </div>
+      </section>
     </>
   )
 }
