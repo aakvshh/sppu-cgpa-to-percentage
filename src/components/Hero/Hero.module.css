@@ -23,6 +23,7 @@
     padding: 12px 8px;
     border-radius: 4px;
     width: 12rem;
+    outline-color: #000;
 }
 .heroLeft button{
     padding: 12px 8px;
@@ -59,6 +60,9 @@
     .heroLeft h1{
         font-size: var(--h2-font-size);
         
+    }
+    .heroLeft input{
+        margin-top: 1em;
     }
     
 }

@@ -14,14 +14,15 @@
     align-items: center;
     padding: 0 4em 0 2em;
 }
-.name{
+.name {
     display: flex;
     align-items: center;
-    gap: 1.2em;
+    gap: 0.8em;
     font-family: 'Sacramento', cursive;
     font-size: var(--largest-font-size);
     letter-spacing: 0.8px;
 }
+
 .logo{
     border-radius: 50%;
 }
@@ -33,7 +34,7 @@
     cursor: pointer;
 }
 .link:hover{
-    color: #333;
+    color: var(--primary-color);
 }
 
 @media (max-width: 540px){
