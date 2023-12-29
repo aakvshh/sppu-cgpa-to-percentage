@@ -4,7 +4,6 @@ import { FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
-    // const love = "<3"
 
     const emailAddress1 = 'tanayanene09@gmail.com'
 
@@ -33,8 +32,7 @@ const Footer = () => {
           </div>
           <div>
             <p className={styles.footer}>No © issues. Contributed by <a href="https://www.linkedin.com/in/tanaya-nene-41b212217/" target='_blank' style={{textDecoration: 'underline'}}>Tanaya Nene</a> and <a href="https://www.linkedin.com/in/aakash-kasabekar-b36133202/" target='_blank' style={{textDecoration: 'underline'}}>Aakash Kasabekar</a></p>
-          {/* <p>Contributed by Aakash Kasabekar {love} Tanaya Nene</p> */}
-            {/* <p style={{textAlign: 'center'}}>Project Link</p> */}
+          
           </div>
           
           <div >

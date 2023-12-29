@@ -1,18 +1,13 @@
 .section{
-    /* padding: 1em; */
     padding-top: 5em;
     background: var(--container-color);
 }
-.animation{
-    /* border-radius: 100%; */
-    /* border-radius: 500em; */
-}
+
 .wrapper{
     padding: 4em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 100%; */
     min-height: 80vh;
     margin-right: 6em;
 }
@@ -44,7 +39,6 @@
 
 .heroRight{
     width: 30%;
-    /* margin-left: 10em; */
 }
 .result{
     margin-top: 3em;
