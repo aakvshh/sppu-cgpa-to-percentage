@@ -36,12 +36,17 @@ const Footer = () => {
           {/* <p>Contributed by Aakash Kasabekar {love} Tanaya Nene</p> */}
             {/* <p style={{textAlign: 'center'}}>Project Link</p> */}
           </div>
+          
           <div >
             <a href="" onClick={handleMailButtonClick2}><CiMail size={30} className={styles.link} /></a>
             <a href="https://github.com/aakvshh" target='_blank'><FaGithub size={30} className={styles.link} /></a>
           </div>
         </div>
+        
       </div>
+      <div className={styles.projectLink}>
+            <a href="https://github.com/aakvshh/sppu-cgpa-to-percentage" target="_blank">Project Link</a>
+        </div>
         
     </>
   )

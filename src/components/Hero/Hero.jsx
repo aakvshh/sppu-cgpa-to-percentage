@@ -58,7 +58,7 @@ const Hero = () => {
       number >= 5.75 && number < 6.75 ? number = number * 5 + 26.25 :
       number >= 6.75 && number < 8.25 ? number = number * 10 - 7.5 :
       number >= 8.25 && number < 9.50 ? number = number * 12 - 25 :
-      number >= 9.5 && number < 10.0 ? number = number * 20 - 100 :
+      number >= 9.5 && number <= 10.0 ? number = number * 20 - 100 :
       null
 
       setResult(number !== null ? `${number.toFixed(2)}%` : null);
@@ -86,7 +86,7 @@ const Hero = () => {
       <section className={styles.section}>
         <div className={styles.wrapper}>
             <div className={styles.heroLeft}>
-                <h1>Effortlessly Bridge CGPA to Percentage with Our Streamlined Tool!</h1><br />
+                <h1>Effortlessly Convert SPPU CGPA to Percentage with Our Streamlined Tool!</h1><br />
                 <label htmlFor="cgpa"><b>Enter your CGPA: </b></label>
                 <input type="tel" onChange={(e) => setUserGpa(e.target.value)} onKeyDown={handleKeyDown} /><br /><br />
                 <button type='submit' onClick={handleCalculations}>Submit</button><br />
@@ -95,7 +95,10 @@ const Hero = () => {
                 )} 
                 <div className={styles.result}>
                   {result !== null ? (
-                    <h3>Your percentage is: {result}</h3>
+                    <>
+                    <div>Your percentage is: </div>
+                      <div className={styles.resultValue}><b>{result}</b></div>
+                    </>
                   ) : (
                     <h3>Please enter a valid CGPA.</h3>
                   )}

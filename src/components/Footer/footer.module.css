@@ -31,6 +31,10 @@
 .link:hover{
     color: var(--primary-color);
 }
+.projectLink{
+    text-align: center;
+    display: none;
+}
 
 @media (max-width: 742px) {
     .footer{
@@ -42,5 +46,17 @@
     .links{
         /* justify-content: space-around; */
         margin-top: 1em;
+    }
+    
+}
+
+@media (max-width: 540px){
+    .projectLink{
+        display: block;
+        background: var(--container-color);
+        padding: 1em 0;
+        text-decoration: underline;
+        border-top: 3px solid var(--text-color);
+        border-bottom: 3px solid var(--text-color);
     }
 }
